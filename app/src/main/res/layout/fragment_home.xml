@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+<RelativeLayout
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ui.home.HomeFragment">
+    <!--    <ScrollView-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent">-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="390dp"
+        android:layout_height="103dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:clipToPadding="false"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:scrollbars="horizontal" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/recyclerView"
+        android:id="@+id/cardView"
+        android:layout_width="382dp"
+        android:layout_height="157dp"
+        android:background="@color/purple_200"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        app:cardUseCompatPadding="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:background="#FAE4FC"
+            android:padding="16dp"
+            tools:layout_editor_absoluteX="6dp"
+            tools:layout_editor_absoluteY="8dp">
+
+            <ImageView
+                android:id="@+id/cardImage"
+                android:layout_width="78dp"
+                android:layout_height="71dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="12dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/id"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/cardTitle"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+            <TextView
+                android:id="@+id/cardTitle"
+                android:layout_width="223dp"
+                android:layout_height="28dp"
+                android:layout_alignTop="@id/cardImage"
+                android:layout_toEndOf="@id/cardImage"
+                android:text="31 Jan Wednesday"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.842"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.352" />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="223dp"
+                android:layout_height="28dp"
+                android:layout_alignTop="@id/cardImage"
+                android:layout_marginBottom="8dp"
+                android:layout_toEndOf="@id/cardImage"
+                android:text="0h / 8h"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.842"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardTitle"
+                app:layout_constraintVertical_bias="0.769"
+                tools:ignore="NotSibling" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="361dp"
+                android:layout_height="30dp"
+                android:shadowColor="#867E7E"
+                android:text="SHIFT TODAY : GENERAL (09:00 AM - 06:00 PM)"
+                android:textColor="#201E1E"
+                app:layout_constraintBottom_toTopOf="@+id/cardTitle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/cardView"
+        android:id="@+id/textView4"
+        android:layout_width="108dp"
+        android:layout_height="25dp"
+        android:text="Off this week"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView2"
+        android:layout_width="378dp"
+        android:layout_height="97dp"
+        android:layout_below="@id/textView4"
+        android:layout_marginLeft="10dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+    <TextView
+        android:layout_below="@+id/recyclerView2"
+        android:id="@+id/textView6"
+        android:layout_width="108dp"
+        android:layout_height="25dp"
+        android:text="Wish them"
+        android:layout_marginLeft="10dp"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@+id/textView6"
+        android:id="@+id/recyclerView3"
+        android:layout_marginLeft="10dp"
+        android:layout_width="381dp"
+        android:layout_height="92dp" />
+
+    <TextView
+        android:layout_below="@id/recyclerView3"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/textView7"
+        android:layout_width="126dp"
+        android:layout_height="27dp"
+        android:text="Announcements"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="wrap_content"
+        android:layout_height="359dp"
+        android:layout_below="@id/textView7"
+        android:layout_marginLeft="10dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+
+            android:layout_width="381dp"
+            android:layout_height="match_parent"
+            android:padding="16dp">
+
+            <!-- Profile Picture -->
+
+            <!-- Name -->
+
+            <!-- Title -->
+
+            <!-- Description -->
+
+            <ImageView
+                android:id="@+id/profilePic"
+                android:layout_width="59dp"
+                android:layout_height="51dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/off"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/profilePic"
+                android:text="John Doe"
+                android:textColor="#000"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.304"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/name"
+                android:text="Software Developer"
+                android:textColor="#555"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.393"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.095" />
+
+            <TextView
+                android:id="@+id/discription"
+                android:layout_width="350dp"
+                android:layout_height="262dp"
+                android:layout_below="@id/name"
+                android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centurieLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only "
+                android:textColor="#555"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:layout_below="@id/cardView2"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/textView8"
+        android:layout_width="256dp"
+        android:layout_height="27dp"
+        android:text="See all announcements"
+        android:textColor="@color/purple_200"
+        android:textSize="16sp"
+         />
+    <TextView
+        android:layout_below="@id/textView8"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/textView9"
+        android:layout_width="256dp"
+        android:layout_height="30dp"
+        android:text="Upcomming holidays"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@+id/textView9"
+        android:id="@+id/recyclerView4"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="173dp" />
+    <TextView
+        android:layout_below="@+id/recyclerView4"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"></TextView>
+
+</RelativeLayout>
+</androidx.core.widget.NestedScrollView>
