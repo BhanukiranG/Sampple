@@ -74,9 +74,9 @@ public class HomeFragment extends Fragment {
 
         List<Text2TextItem> cardItems = new ArrayList<>();
 
-        cardItems.add(new Text2TextItem("holi","sunday"));
-        cardItems.add(new Text2TextItem("Shivratri","Monday"));
-        cardItems.add(new Text2TextItem("Raksha","Saturday"));
+        cardItems.add(new Text2TextItem("Holi","Fri, 08 March 2024"));
+        cardItems.add(new Text2TextItem("Shivratri","Fri, 08 March 2024"));
+        cardItems.add(new Text2TextItem("Raksha","Fri, 08 March 2024"));
         Text2TextAdapter adapter = new Text2TextAdapter(cardItems);
         recyclerView4.setAdapter(adapter);
 

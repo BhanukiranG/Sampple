@@ -12,20 +12,21 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="173dp"
+        android:layout_height="141dp"
         android:background="#BFFD78"
         android:padding="16dp">
 
         <TextView
             android:id="@+id/name3"
-            android:layout_width="62dp"
-            android:layout_height="19dp"
+            android:layout_width="99dp"
+            android:layout_height="26dp"
             android:text="HOLIDAY"
             android:textColor="#000"
-            android:textSize="10sp"
+            android:textSize="20sp"
+            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.079"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.0" />
@@ -34,29 +35,31 @@
             android:id="@+id/holidaytitle"
             android:layout_width="139dp"
             android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
             android:text="Maha Shivaratri"
-            android:textColor="#555"
+            android:textColor="@color/design_default_color_on_secondary"
             android:textSize="16sp"
+            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.107"
+            app:layout_constraintHorizontal_bias="0.014"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.613" />
+            app:layout_constraintVertical_bias="0.609" />
 
         <TextView
             android:id="@+id/holidaydate"
-            android:layout_width="320dp"
-            android:layout_height="29dp"
+            android:layout_width="137dp"
+            android:layout_height="23dp"
             android:text="Fri, 08 March 2024"
-            android:textColor="#777"
+            android:textColor="@color/design_default_color_on_secondary"
             android:textSize="14sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toEndOf="@+id/holidaytitle"
+            app:layout_constraintHorizontal_bias="0.079"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.917" />
+            app:layout_constraintVertical_bias="0.872" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
