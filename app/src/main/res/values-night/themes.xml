@@ -1,16 +1,25 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.RecyclerView" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <style name="Theme.RecyclerView" parent="Theme.MaterialComponents.Light.DarkActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/purple_200</item>
-        <item name="colorPrimaryVariant">@color/purple_700</item>
-        <item name="colorOnPrimary">@color/black</item>
+        <item name="colorPrimary">#54337D</item>
+        <item name="colorPrimaryVariant">#54337D</item>
+        <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/teal_200</item>
-        <item name="colorSecondaryVariant">@color/teal_200</item>
-        <item name="colorOnSecondary">@color/black</item>
+        <item name="colorSecondary">#54337D</item>
+        <item name="colorSecondaryVariant">#54337D</item>
+        <item name="colorOnSecondary">#54337D</item>
         <!-- Status bar color. -->
-        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <item name="android:statusBarColor">#54337D</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <style name="Theme.RecyclerView.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.RecyclerView.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.RecyclerView.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>
